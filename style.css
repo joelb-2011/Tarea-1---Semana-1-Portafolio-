@@ -1,0 +1,27 @@
+.container {
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    position: relative;
+    background-color: #2c00f0;
+}
+
+
+@media (min-width: 760px) {
+
+    .line {
+        background-color: var(--text-color-inverse);
+        position: relative;
+    }
+
+    .line::before,
+    .line::after {
+
+        position: absolute;
+        height: 50px;
+        left: 50px;
+        ;
+        margin-left: -4px;
+        top: -42px;
+    }
+}
